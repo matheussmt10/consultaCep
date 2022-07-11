@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta CEP</title>
+</head>
+<body>
+    
+        <div id="container">
+            <h1 id="title">Consultar CEP</h1>
+            <div id="sectionForn">
+                
+                <form id="form" onsubmit="return false;">
+                    
+                    <input type="text" id="inputCep"  placeholder="Digite um CEP" maxlength="8">
+                    <input type="button" value="Enviar" id="buttonSubmit">
+                </form>
+            </div>
+
+            <div id="sectionResult">
+                <p id="street"></p>
+                <p id="district"></p>
+                <p id="city"></p>
+                <p id="state"></p>
+            </div>
+        </div>
+    
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

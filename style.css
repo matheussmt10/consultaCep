@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #3daec4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#container {
+   display: flex;
+   flex-direction: column;
+   
+   align-items: center;
+   
+}
+
+#title {
+   margin-bottom: -10px;
+    font-family: 'Nunito', sans-serif;
+    color: aliceblue;
+}
+
+#sectionForn {
+    display: flex;
+    width: 400px;
+    height: 160px;
+    
+    
+    justify-content: center;
+    border-radius: 100px;
+}
+#sectionForn form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#inputCep {
+    height: 40px;
+    width: 200px;
+    font-size: 20pt;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    border: none;
+    padding: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+#inputCep::placeholder {
+    font-size: 15pt;
+    text-align: center;
+
+}
+
+#buttonSubmit {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border: outset;
+    font-size: 15pt;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold
+}
+
+#buttonSubmit:hover {
+    background-color: #52729680;
+    color: white;
+    transition: all .3s;
+}
+
+
+#sectionResult {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.342);
+    width: 600px;
+    height: 220px;
+    border-radius: 50px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    
+}
+
+
+
+#sectionResult p {
+    margin-top: 20px;
+    font-size: 14pt;
+    
+    font-family: 'Nunito', sans-serif;
+    
+}
+#sectionResult p span {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+/* retirar setas do input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
