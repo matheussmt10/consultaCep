@@ -97,7 +97,9 @@ body {
     
 }
 
-
+#sectionResult p:first-child{
+    margin-top: 0px;
+}
 
 #sectionResult p {
     margin-top: 20px;
